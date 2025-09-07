@@ -1,0 +1,17 @@
+# python
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# node
+node_modules/
+dist/
+.nuxt/
+npm-debug.log
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# vscode
+.vscode/

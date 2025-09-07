@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pydantic
+tinydb
+dramatiq[redis]
+redis
+structlog
+sentry-sdk
+python-dotenv

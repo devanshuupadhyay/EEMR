@@ -1,0 +1,36 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install backend deps
+        run: |
+          python -m venv .venv
+          . .venv/bin/activate
+          pip install -r backend/requirements.txt
+      - name: Lint (black)
+        run: |
+          . .venv/bin/activate
+          black --check backend
+
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Node setup
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install & Lint
+        run: |
+          cd frontend
+          npm ci
+          npx eslint .
