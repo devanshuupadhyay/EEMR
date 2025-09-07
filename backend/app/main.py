@@ -5,7 +5,8 @@ from tinydb import TinyDB
 import structlog
 import time
 import os
-from ._observability import init_sentry 
+from ._observability import init_sentry, init_structlog, init_prometheus, init_tracing
+from opentelemetry import trace
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -17,29 +18,50 @@ db = TinyDB(os.path.join(DATA_DIR, "db.json"))
 users_table = db.table("users")
 audit_table = db.table("audit")
 
-logger = structlog.get_logger()
-
 app = FastAPI(title="Easy EMR")
 
 # Initialize observability
+init_structlog() 
+logger = structlog.get_logger()
 init_sentry(app) 
+init_prometheus(app)
+init_tracing(app)
 
 class UserIn(BaseModel):
     username: str
     display_name: str | None = None
 
 @app.middleware("http")
-async def audit_middleware(request: Request, call_next):
-    start = time.time()
-    response = await call_next(request)
-    duration = time.time() - start
-    audit_table.insert({
-        "path": str(request.url.path),
-        "method": request.method,
-        "status_code": response.status_code,
-        "duration": duration
-    })
-    logger.info("request", path=str(request.url.path), method=request.method, status=response.status_code, duration=duration)
+async def observability_middleware(request: Request, call_next):
+    """
+    Middleware that logs request info (Structlog),
+    records duration in TinyDB audit table,
+    and automatically creates an OpenTelemetry span.
+    """
+    start_time = time.time()
+    # Create a tracing span for this request
+    tracer = trace.get_tracer(__name__)
+    with tracer.start_as_current_span(f"{request.method} {request.url.path}"):
+        response = await call_next(request)
+        duration = time.time() - start_time
+
+        # Record audit in TinyDB
+        audit_table.insert({
+            "path": str(request.url.path),
+            "method": request.method,
+            "status_code": response.status_code,
+            "duration": duration
+        })
+
+        # Log structured message with Structlog
+        logger.info(
+            "http_request",
+            path=str(request.url.path),
+            method=request.method,
+            status=response.status_code,
+            duration=duration
+        )
+
     return response
 
 @app.get("/")

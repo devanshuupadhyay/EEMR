@@ -69,21 +69,164 @@ wire up structlog (done in the sample main.py) and provide a placeholder for Sen
 
 ### Database & Models
 *   Initialize TinyDB with JSON file storage to provide a simple, file-based database solution.
-*   Define the following Pydantic models for data validation and consistency:
-    *   `User`
-    *   `Patient`
-    *   `Appointment`
-    *   `Encounter` (for SOAP notes)
-    *   `Prescription`
-    *   `LabOrder` and `LabResult`
-    *   `BillingRecord`
+*   Define the following Pydantic models for data validation and consistency
 *   Create a generic data access layer to abstract database operations.
+
+#### 1. Database Setup
+
+**Purpose:** Persist application data in a lightweight and accessible format.
+
+* **Database:** TinyDB (JSON-based, file storage)
+* **Data directory:** Created for storing `db.json`.
+* Tables for each entity ensure organized separation of data.
+* Allows for quick prototyping without complex database setup.
+
+---
+
+#### 2. Data Models
+
+**Purpose:** Define structured data objects for all entities using Pydantic.
+
+* **User:** Authentication and role information.
+
+* **Patient:** Demographics and insurance information.
+
+* **Appointment:** Scheduling, conflict checking, and physician association.
+
+* **Encounter:** SOAP notes, visit records.
+
+* **Prescription:** Medication details linked to encounters.
+
+* **LabOrder / LabResult:** Orders and results of tests and imaging.
+
+* **BillingRecord:** Financial records, CPT/ICD codes.
+
+* Pydantic ensures **data validation and type safety**.
+
+* Models define **fields, optional fields, and default values**.
+
+---
+
+#### 3. Tables and Access Layer
+
+**Purpose:** Provide structured access to each table.
+
+* Each entity gets its own TinyDB table (e.g., `users`, `patients`, `appointments`).
+* A generic data access layer provides **CRUD operations**.
+* Enables future expansion, e.g., migration to relational DB if needed.
+
+#### 4. Observability Integration
+
+* While not full observability, database actions are logged into **audit table**.
+* Ensures traceability of data changes for compliance and debugging.
+
+---
+
+#### 5. How It Works Together
+
+| Component         | Purpose                                      |
+| ----------------- | -------------------------------------------- |
+| TinyDB            | Lightweight JSON database for persistence    |
+| Pydantic Models   | Structured, validated data for all entities  |
+| Tables            | Separate storage per entity for organization |
+| Data Access Layer | CRUD operations and abstraction over raw DB  |
+| Audit Table       | Track data changes for observability         |
+
+* This foundation allows later milestones (Patient Management, Appointments, Billing) to **operate on consistent, validated data**.
+
+---
+
+* EasyEMR’s database uses **TinyDB + Pydantic** for simplicity and structure.
+* Clear separation of concerns: models define data, tables store it, access layer manipulates it.
+* Audit logging ensures traceability even in a lightweight system.
+* Provides a foundation for all future features and observability.
+
 
 ### Observability
 *   Integrate Structlog for structured and contextual logging.
 *   Set up Prometheus and Grafana for monitoring application metrics and visualizing performance dashboards.
 *   Integrate Sentry for robust error tracking and reporting.
 *   Configure OpenTelemetry to enable distributed tracing.
+
+
+#### 1. Logging with Structlog
+
+**Purpose:** Structured logging allows logs to be machine-readable (JSON) for easy search and aggregation.
+
+* Logs contain fields like `method`, `handler`, `status`, and `duration`.
+* Logs are output to console and can be aggregated in log management tools.
+
+---
+
+#### 2. Error Tracking with Sentry
+
+**Purpose:** Capture exceptions and errors automatically.
+
+* Requires `SENTRY_DSN` in environment variables.
+* Middleware automatically captures exceptions from FastAPI endpoints.
+
+---
+
+#### 3. Metrics with Prometheus
+
+**Purpose:** Measure system performance and usage (request counts, durations, status codes).
+
+* Metrics are exposed via `/metrics` endpoint.
+* Prometheus scrapes metrics and stores them.
+* Metrics include request totals, duration sums and counts, and status code counts.
+
+---
+
+#### 4. Tracing with OpenTelemetry
+
+**Purpose:** Track requests through the system to identify latency or errors.
+
+* Spans represent individual requests and can be exported to tracing backends like Jaeger.
+* Each HTTP request is wrapped in a span to visualize request flow and latency.
+
+---
+
+#### 5. Middleware for Request Logging & Audit
+
+* Combines logging, tracing, and audit.
+* Stores request info in the TinyDB audit table.
+* Logs structured request information and wraps the request in OpenTelemetry spans.
+
+---
+
+#### 6. Grafana Dashboard
+
+* Visualizes Prometheus metrics:
+
+  1. HTTP Requests per Endpoint
+  2. Request Duration
+  3. HTTP Status Codes
+
+* Ensure the time picker is set to the last 5–15 minutes to see live updates.
+
+---
+
+#### 7. How It Works Together
+
+| Component     | Purpose                                                |
+| ------------- | ------------------------------------------------------ |
+| Structlog     | Structured logging for human + machine readability     |
+| Sentry        | Automatic error reporting                              |
+| Prometheus    | Collect request/latency metrics                        |
+| Grafana       | Visualize metrics                                      |
+| OpenTelemetry | Trace requests across services                         |
+| Middleware    | Combines logging, tracing, and audit into each request |
+
+* Logs show **what happened**.
+* Metrics show **how often and how long**.
+* Traces show **where latency occurs**.
+* Error monitoring shows **unexpected failures**.
+
+---
+
+* Observability combines **logs, metrics, traces, and alerts**.
+* Provides visibility into system health and user activity.
+* Real-time metrics and dashboards help quickly identify issues.
 
 ## Milestone 2: User & Security
 

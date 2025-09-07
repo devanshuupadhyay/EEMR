@@ -1,9 +1,19 @@
+# Core FastAPI backend
 fastapi
 uvicorn[standard]
 pydantic
 tinydb
 dramatiq[redis]
 redis
+python-dotenv
+
+# Observability / Logging
 structlog
 sentry-sdk
-python-dotenv
+prometheus-fastapi-instrumentator
+
+# OpenTelemetry for tracing
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-instrumentation-fastapi
+opentelemetry-exporter-otlp

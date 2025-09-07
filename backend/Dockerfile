@@ -1,7 +1,15 @@
+# backend/Dockerfile
 FROM python:3.11-slim
+
 WORKDIR /app
-COPY ./app /app/app
-RUN pip install --upgrade pip
+
+# Copy requirements and install
 COPY requirements.txt .
-RUN pip install -r requirements.txt
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy app source
+COPY . .
+
+# Expose port and default command
+EXPOSE 8000
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
