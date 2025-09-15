@@ -1,13 +1,20 @@
 # backend/app/main.py
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Depends, HTTPException
+from fastapi.security import OAuth2PasswordRequestForm
 from pydantic import BaseModel
 from tinydb import TinyDB, Query
 from passlib.context import CryptContext
 import structlog
 import time
 import os
+import sys
+
 from ._observability import init_sentry, init_structlog, init_prometheus, init_tracing
 from opentelemetry import trace
+
+from models.crud import add_user, get_user_by_username
+from auth.auth import create_access_token, verify_password, require_role
+from models.models import User, Appointment, Encounter, Prescription, LabOrder, LabResult, BillingRecord
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -70,7 +77,33 @@ async def root():
     return {"status": "ok"}
 
 @app.post("/demo/create-user")
-async def create_user(payload: UserIn):
-    # Demo: one-click user creation for local demo only (DO NOT use in production)
-    users_table.insert(payload.model_dump())
-    return {"created": payload.username}
+async def create_demo_users():
+    from models import User
+    demo_users = [
+        User(username="admindemo", email="admindemo@test.com", hashed_password="", role="admin"),
+        User(username="doc", email="doc@test.com", hashed_password="", role="physician"),
+        User(username="staff", email="staff@test.com", hashed_password="", role="staff"),
+    ]
+    for u in demo_users:
+        add_user(u)
+
+@app.post("/token")
+async def login(form_data: OAuth2PasswordRequestForm = Depends()):
+    user = get_user_by_username(form_data.username)
+    if not user or not verify_password(form_data.password, user["hashed_password"]):
+        raise HTTPException(status_code=400, detail="Incorrect username or password")
+    token = create_access_token({"sub": user["username"], "role": user["role"]})
+    return {"access_token": token, "token_type": "bearer"}
+
+@app.get("/admin-only")
+async def admin_endpoint(user: dict = Depends(require_role("admin"))):
+    return {"message": f"Hello {user['username']}, you are an admin!"}
+
+@app.post("/signup")
+async def signup(user: "User"):
+    from models import User
+    existing = get_user_by_username(user.username)
+    if existing:
+        raise HTTPException(status_code=400, detail="Username already exists")
+    add_user(user)
+    return {"message": "User created successfully"}

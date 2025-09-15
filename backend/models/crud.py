@@ -1,5 +1,7 @@
 from datetime import date
 from tinydb import Query
+
+from auth.auth import hash_password
 from .db import (
     users_table,
     audit_table,
@@ -14,13 +16,21 @@ from .db import (
 from .models import User, Patient, Appointment, Encounter, Prescription, LabOrder, LabResult, BillingRecord
 
 # ---------- User CRUD ----------
-def add_user(user: User):
-    users_table.insert(user.model_dump())
 
 def get_user_by_id(user_id: str):
     q = Query()
     return users_table.get(q.id == user_id)
 
+def add_user(user: User):
+    user_dict = user.model_dump()
+    if "hashed_password" not in user_dict or not user_dict["hashed_password"]:
+        user_dict["hashed_password"] = hash_password(user_dict.get("password", "defaultpass"))
+    users_table.insert(user_dict)
+
+def get_user_by_username(username: str):
+    from tinydb import Query
+    q = Query()
+    return users_table.get(q.username == username)
 # ---------- Patient CRUD ----------
 def add_patient(patient: Patient):
     patient_dict = patient.model_dump()

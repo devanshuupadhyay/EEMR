@@ -44,12 +44,7 @@ Integrate Sentry for error tracking.
 Configure OpenTelemetry for tracing.
 
 Milestone 2: User & Security
-
-Frontend Auth
-
 Nuxt.js login page.
-
-Pinia store for auth state.
 
 Milestone 3: Patient Management
 

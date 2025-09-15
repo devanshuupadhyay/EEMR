@@ -3,6 +3,9 @@ fastapi
 uvicorn[standard]
 pydantic
 tinydb
+python-multipart
+python-jose
+passlib[bcrypt]
 dramatiq[redis]
 redis
 python-dotenv
