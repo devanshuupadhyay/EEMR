@@ -1,11 +1,18 @@
 from pydantic import BaseModel
 from typing import Optional, List
 from datetime import date
+from enum import Enum
+
+class UserRole(str, Enum):
+    admin = "admin"
+    physician = "physician"
+    staff = "staff"
 
 class User(BaseModel):
-    id: str
+    id: int
     username: str
-    role: str  # admin, physician, staff
+    password_hash: str
+    role: UserRole
 
 class Patient(BaseModel):
     id: str

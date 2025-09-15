@@ -1,7 +1,8 @@
 # backend/app/main.py
 from fastapi import FastAPI, Request
 from pydantic import BaseModel
-from tinydb import TinyDB
+from tinydb import TinyDB, Query
+from passlib.context import CryptContext
 import structlog
 import time
 import os

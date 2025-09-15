@@ -45,23 +45,11 @@ Configure OpenTelemetry for tracing.
 
 Milestone 2: User & Security
 
-Authentication & Access Control
-
-Simple one-click user creation (demo mode).
-
-Implement JWT-based auth.
-
-Define basic role model (admin, physician, staff).
-
-Add audit trail logging for all patient record actions.
-
 Frontend Auth
 
 Nuxt.js login page.
 
 Pinia store for auth state.
-
-Protect routes based on role.
 
 Milestone 3: Patient Management
 
