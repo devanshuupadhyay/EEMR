@@ -31217,6 +31217,24 @@
             "method": "GET",
             "status_code": 200,
             "duration": 0.0003261566162109375
+        },
+        "5208": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001010894775390625
+        },
+        "5209": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.00047278404235839844
+        },
+        "5210": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.00029850006103515625
         }
     },
     "users": {
