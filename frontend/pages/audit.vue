@@ -86,13 +86,13 @@ const statusColorClass = (statusCode) => {
       <div class="overflow-x-auto">
         <table class="w-full text-left">
           <thead>
-            <tr :class="['border-b', { 'border-neutral-700': true }]">
+            <tr :class="theme.components.table.header">
               <th class="p-2 w-24">Method</th>
               <th class="p-2">Path</th>
               <th class="p-2 w-28">Status</th>
               <th class="p-2 w-32 text-right">Duration</th>
             </tr>
-            <tr :class="['border-b', { 'border-neutral-700': true }]">
+            <tr :class="theme.components.table.header">
               <th class="p-1"><input v-model="filters.method" placeholder="Filter..." :class="theme.components.input.compact" /></th>
               <th class="p-1"><input v-model="filters.path" placeholder="Filter..." :class="theme.components.input.compact" /></th>
               <th class="p-1"><input v-model="filters.status" placeholder="Filter..." :class="theme.components.input.compact" /></th>
@@ -102,7 +102,7 @@ const statusColorClass = (statusCode) => {
           <tbody>
             <tr v-if="isLoading"><td colspan="4" class="text-center p-4 animate-pulse">Loading...</td></tr>
             <tr v-else-if="auditLogs.length === 0"><td colspan="4" class="text-center p-4">No audit logs match your search.</td></tr>
-            <tr v-else v-for="(log, index) in auditLogs" :key="index" :class="['border-b', { 'border-neutral-800': true }, 'hover:bg-neutral-800 text-sm']">
+            <tr v-else v-for="(log, index) in auditLogs" :key="index" :class="theme.components.table.row">
               <td class="p-2 font-mono font-semibold" :class="{'text-cyan-400': log.method === 'GET', 'text-green-400': log.method === 'POST', 'text-yellow-400': log.method === 'OPTIONS'}">{{ log.method }}</td>
               <td class="p-2 font-mono">{{ log.path }}</td>
               <td class="p-2 font-semibold" :class="statusColorClass(log.status_code)">{{ log.status_code }}</td>

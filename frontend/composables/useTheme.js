@@ -6,8 +6,8 @@ export const useTheme = () => {
   return {
     // 🎨 Color System
     colors: {
-      secondary: "#00F5D4", // Vibrant cyan-lime for branding & key actions
-      primary: "#0F4C5C", // Deep dark teal for accents & active states
+      primary: "#005A9C",   // NEW - Deep Blue
+      secondary: "#17A2B8", // NEW - Muted Teal
       neutral: {
         darkest: "#0B0C10", // App background (dark mode foundation)
         dark: "#1C1F26", // Panels / cards
@@ -57,6 +57,10 @@ export const useTheme = () => {
       nav: {
         link: "flex items-center gap-2 px-3 py-2 rounded-md text-neutral-light hover:text-secondary hover:bg-neutral-medium transition",
         active: "text-secondary font-semibold border-l-4 border-secondary bg-neutral-medium",
+      },
+      table: {
+        header: "border-b border-neutral-700",
+        row: "border-b border-neutral-medium hover:bg-primary text-sm",
       },
     },
 
