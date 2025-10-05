@@ -111,12 +111,11 @@ const performRequest = async (apiCall) => {
 
 <template>
   <div>
-    <h2 :class="[theme.typography.h2, theme.typography.headings]">Patient Management</h2>
-    <p :class="[theme.colors.neutral.light, 'mt-2']">Create, find, and view patient records.</p>
+    <h3 :class="[theme.typography.h3, theme.typography.headings]">Patient Management</h3>
 
-    <div class="mt-4 flex items-center justify-center gap-4 p-2 rounded-lg bg-neutral-dark border border-neutral-medium">
+    <div class="mt-1 flex items-center justify-center gap-1 p-1 rounded-lg bg-neutral-dark border border-neutral-medium">
       <button v-for="(section, index) in sections" :key="section.id" @click="jumpToSection(index)"
-              :class="['px-3 py-1.5 rounded-md text-sm font-medium transition-colors',
+              :class="['px-1 py-1.5 rounded-md text-sm font-medium transition-colors',
                        currentSectionIndex === index ? 'bg-secondary text-neutral-lightest' : 'text-neutral-light hover:bg-neutral-medium']">
         {{ section.title }}
       </button>
@@ -133,10 +132,10 @@ const performRequest = async (apiCall) => {
       <div class="w-full max-w-4xl mx-auto">
         <div v-for="(section, index) in sections" :key="section.id">
           <div v-if="index === currentSectionIndex" :class="[theme.components.card.base, 'w-full min-h-[350px]']">
-            <h3 class="text-xl font-bold" :style="{ color: theme.colors.primary }">{{ section.title }}</h3>
+            <p class="text-sm" :style="{ color: theme.colors.primary }">{{ section.title }}</p>
             <p :class="[theme.colors.neutral.light, 'text-sm']">{{ section.description }}</p>
 
-            <div v-if="isLoading || successMessage || error" class="my-3 p-3 rounded-lg text-sm"
+            <div v-if="isLoading || successMessage || error" class="my-1 p-1 rounded-lg text-sm"
                  :class="{'bg-neutral-dark animate-pulse': isLoading, 'bg-green-900/50 text-green-300': successMessage, 'bg-red-900/50 text-red-300': error}">
                 <p v-if="isLoading">Loading...</p>
                 <p v-if="successMessage">{{ successMessage }}</p>
@@ -170,14 +169,14 @@ const performRequest = async (apiCall) => {
 
               <div v-if="section.id === 'all'" class="overflow-x-auto">
                  <table class="w-full text-left">
-                    <thead><tr :class="['border-b', { 'border-neutral-700': true }]"><th class="py-2 px-1">ID</th><th class="py-2 px-1">Name</th><th class="py-2 px-1">Gender</th><th class="py-2 px-1">Birth Date</th></tr></thead>
+                    <thead><tr :class="['border-b', { 'border-neutral-700': true }]"><th class="px-1">ID</th><th class="px-1">Name</th><th class="px-1">Gender</th><th class="px-1">Birth Date</th></tr></thead>
                     <tbody>
-                        <tr v-if="allPatients.length === 0 && !isLoading"><td colspan="4" class="text-center p-4">No patients found.</td></tr>
+                        <tr v-if="allPatients.length === 0 && !isLoading"><td colspan="4" class="text-center p-1">No patients found.</td></tr>
                         <tr v-for="p in allPatients" :key="p.id" :class="['border-b', { 'border-neutral-800': true }, 'hover:bg-neutral-800']">
-                            <td class="p-2 font-mono">{{ p.id }}</td>
-                            <td class="p-2">{{ p.name[0].given.join(' ') }} {{ p.name[0].family }}</td>
-                            <td class="p-2">{{ p.gender }}</td>
-                            <td class="p-2">{{ p.birthDate }}</td>
+                            <td class="p-1 font-mono">{{ p.id }}</td>
+                            <td class="p-1">{{ p.name[0].given.join(' ') }} {{ p.name[0].family }}</td>
+                            <td class="p-1">{{ p.gender }}</td>
+                            <td class="p-1">{{ p.birthDate }}</td>
                         </tr>
                     </tbody>
                 </table>

@@ -77,20 +77,19 @@ const statusColorClass = (statusCode) => {
 
 <template>
   <div>
-    <h2 :class="[theme.typography.h2, theme.typography.headings]">Audit Log</h2>
-    <p :class="[theme.colors.neutral.light, 'mt-2']">Review of all API requests and system activities.</p>
+    <h3 :class="[theme.typography.h3, theme.typography.headings]">Audit Logs</h3>
 
     <div :class="[theme.components.card.compact, 'mt-4']">
-      <div v-if="error" class="p-3 bg-red-900/50 text-red-300 rounded-lg mb-3"><strong>Error:</strong> {{ error }}</div>
+      <div v-if="error" class="p-2 bg-red-900/50 text-red-300 rounded-lg mb-3"><strong>Error:</strong> {{ error }}</div>
 
       <div class="overflow-x-auto">
         <table class="w-full text-left">
           <thead>
             <tr :class="theme.components.table.header">
-              <th class="p-2 w-24">Method</th>
-              <th class="p-2">Path</th>
-              <th class="p-2 w-28">Status</th>
-              <th class="p-2 w-32 text-right">Duration</th>
+              <th class="w-24">Method</th>
+              <th class="">Path</th>
+              <th class="w-28">Status</th>
+              <th class="w-32 text-right">Duration</th>
             </tr>
             <tr :class="theme.components.table.header">
               <th class="p-1"><input v-model="filters.method" placeholder="Filter..." :class="theme.components.input.compact" /></th>
@@ -103,10 +102,10 @@ const statusColorClass = (statusCode) => {
             <tr v-if="isLoading"><td colspan="4" class="text-center p-4 animate-pulse">Loading...</td></tr>
             <tr v-else-if="auditLogs.length === 0"><td colspan="4" class="text-center p-4">No audit logs match your search.</td></tr>
             <tr v-else v-for="(log, index) in auditLogs" :key="index" :class="theme.components.table.row">
-              <td class="p-2 font-mono font-semibold" :class="{'text-cyan-400': log.method === 'GET', 'text-green-400': log.method === 'POST', 'text-yellow-400': log.method === 'OPTIONS'}">{{ log.method }}</td>
-              <td class="p-2 font-mono">{{ log.path }}</td>
-              <td class="p-2 font-semibold" :class="statusColorClass(log.status_code)">{{ log.status_code }}</td>
-              <td class="p-2 text-right font-mono">{{ log.duration }}</td>
+              <td class="p-1 font-mono font-semibold" :class="{'text-cyan-400': log.method === 'GET', 'text-green-400': log.method === 'POST', 'text-yellow-400': log.method === 'OPTIONS'}">{{ log.method }}</td>
+              <td class="p-1 font-mono">{{ log.path }}</td>
+              <td class="p-1 font-semibold" :class="statusColorClass(log.status_code)">{{ log.status_code }}</td>
+              <td class="p-1 text-right font-mono">{{ log.duration }}</td>
             </tr>
           </tbody>
         </table>

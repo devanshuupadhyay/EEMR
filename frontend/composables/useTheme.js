@@ -24,9 +24,9 @@ export const useTheme = () => {
       headings: "font-semibold tracking-tight",
       body: "font-normal leading-relaxed",
       sizes: {
-        h1: "text-5xl font-extrabold",
-        h2: "text-4xl font-bold",
-        h3: "text-2xl font-semibold",
+        h1: "text-3xl font-extrabold",
+        h2: "text-2xl font-bold",
+        h3: "text-xl font-semibold",
         body: "text-base md:text-lg",
         small: "text-sm",
       },

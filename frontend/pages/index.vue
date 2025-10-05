@@ -19,9 +19,6 @@ const modules = [
 
 <template>
   <div>
-    <h2 :class="[theme.typography.h2, theme.typography.headings, 'mb-4']">
-      Application Modules
-    </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
       <NuxtLink v-for="mod in modules" :key="mod.name" :to="mod.link" :class="theme.components.card.base">
         <span class="text-xl font-bold" :style="{ color: theme.colors.primary }">
