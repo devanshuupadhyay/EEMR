@@ -6,8 +6,8 @@ export const useTheme = () => {
   return {
     // 🎨 Color System
     colors: {
-      primary: "#005A9C",   // NEW - Deep Blue
-      secondary: "#17A2B8", // NEW - Muted Teal
+      primary: "#1E90FF",   // Bright Azure
+      secondary: "#17A2B8", // Muted Teal
       neutral: {
         darkest: "#0B0C10", // App background (dark mode foundation)
         dark: "#1C1F26", // Panels / cards
