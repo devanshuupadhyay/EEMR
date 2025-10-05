@@ -24,10 +24,21 @@ def init_structlog():
         level=logging.INFO
     )
 
+    
+    # Determine which renderer to use based on an environment variable.
+    # Set APP_ENV=dev in your .env or docker-compose.yml for development logging.
+    renderer = (
+        structlog.dev.ConsoleRenderer()
+        if os.getenv("APP_ENV") == "dev"
+        else structlog.processors.JSONRenderer()
+    )
+    
+
     structlog.configure(
         processors=[
             structlog.processors.TimeStamper(fmt="iso"),
-            structlog.processors.JSONRenderer()
+            # The renderer variable will be either ConsoleRenderer or JSONRenderer
+            renderer
         ],
         context_class=dict,
         logger_factory=structlog.stdlib.LoggerFactory(),

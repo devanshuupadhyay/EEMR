@@ -6,8 +6,8 @@ export const useTheme = () => {
   return {
     // 🎨 Color System
     colors: {
-      primary: "#00F5D4", // Vibrant cyan-lime for branding & key actions
-      secondary: "#0F4C5C", // Deep dark teal for accents & active states
+      secondary: "#00F5D4", // Vibrant cyan-lime for branding & key actions
+      primary: "#0F4C5C", // Deep dark teal for accents & active states
       neutral: {
         darkest: "#0B0C10", // App background (dark mode foundation)
         dark: "#1C1F26", // Panels / cards
@@ -35,17 +35,24 @@ export const useTheme = () => {
     // 🧩 Components
     components: {
       button: {
-        base: "px-4 py-2 rounded-lg font-semibold transition-all duration-300",
+        // --- UPDATED: Reduced vertical padding ---
+        base: "px-4 py-1.5 rounded-lg font-semibold transition-all duration-300",
         primary:
           "bg-primary text-white hover:shadow-[0_0_15px_#00F5D4aa] hover:scale-105 active:scale-95",
         secondary:
           "bg-secondary text-black hover:shadow-[0_0_15px_#00F5D4aa] hover:scale-105 active:scale-95",
       },
       input: {
-        base: "w-full px-4 py-2 rounded-md bg-neutral-dark border border-neutral-medium text-neutral-lightest placeholder-neutral-light focus:outline-none focus:ring-2 focus:ring-secondary",
+        // --- UPDATED: Reduced vertical padding ---
+        base: "w-full px-4 py-1.5 rounded-md bg-neutral-dark border border-neutral-medium text-neutral-lightest placeholder-neutral-light focus:outline-none focus:ring-2 focus:ring-secondary",
+        // --- NEW: Compact version for tables ---
+        compact: "w-full px-2 py-1 rounded-md bg-neutral-dark border border-neutral-medium text-neutral-lightest placeholder-neutral-light focus:outline-none focus:ring-1 focus:ring-secondary",
       },
       card: {
-        base: "rounded-2xl p-6 border border-neutral-medium bg-neutral-dark shadow-lg hover:shadow-[0_0_25px_-5px_rgba(0,245,212,0.25)] transition-all duration-300",
+        // --- UPDATED: Reduced padding ---
+        base: "rounded-2xl p-4 border border-neutral-medium bg-neutral-dark shadow-lg hover:shadow-[0_0_25px_-5px_rgba(0,245,212,0.25)] transition-all duration-300",
+         // --- NEW: Compact version for less vertical space ---
+        compact: "rounded-xl p-3 border border-neutral-medium bg-neutral-dark shadow-lg hover:shadow-[0_0_25px_-5px_rgba(0,245,212,0.25)] transition-all duration-300",
       },
       nav: {
         link: "flex items-center gap-2 px-3 py-2 rounded-md text-neutral-light hover:text-secondary hover:bg-neutral-medium transition",

@@ -1,11 +1,12 @@
 <template>
   <div class="bg-neutral-darkest text-neutral-lightest min-h-screen flex flex-col font-sans">
-    <!-- 🌐 Top Navigation -->
     <header class="bg-neutral-dark border-b border-neutral-medium p-4 flex justify-between items-center shadow-md">
-      <div class="flex items-center gap-x-2">
+      
+      <NuxtLink to="/" class="flex items-center gap-x-2 cursor-pointer">
         <img src="/icons/eemr_icon.png" alt="Easy EMR Logo" class="h-8 w-8 hexagon-img" />
         <div class="text-xl font-bold text-secondary">Easy EMR</div>
-      </div>
+      </NuxtLink>
+
       <nav class="flex gap-4">
         <a
           href="http://localhost:3000/login"
@@ -20,6 +21,13 @@
           class="hover:text-secondary transition"
         >
           Backend
+        </a>
+        <a
+          href="https://sentry.io/organizations/test-4ze/issues/"
+          target="_blank"
+          class="hover:text-secondary transition"
+        >
+          Sentry
         </a>
         <a
           href="http://localhost:3001"
@@ -39,12 +47,10 @@
       </nav>
     </header>
 
-    <!-- 📦 Main Content -->
     <main class="flex-1 p-6 animate-fadeIn">
       <slot />
     </main>
 
-    <!-- 📌 Footer -->
     <footer class="bg-neutral-dark border-t border-neutral-medium p-4 text-sm text-neutral-light text-center">
       © 2025 Easy EMR — Futuristic Care Simplified
     </footer>

@@ -1,90 +1,36 @@
 <script setup>
 definePageMeta({
   layout: "default",
-})
+});
 
-const theme = useTheme()
+const theme = useTheme();
 
-// Module metadata for cleaner markup
 const modules = [
-  {
-    name: "Users",
-    description: "Manage roles, accounts & access",
-    link: "/users",
-    accent: theme.colors.secondary,
-  },
-  {
-    name: "Patients",
-    description: "Demographics & insurance",
-    link: "/patients",
-    accent: theme.colors.secondary,
-  },
-  {
-    name: "Appointments",
-    description: "Scheduling & calendar",
-    link: "/appointments",
-    accent: theme.colors.secondary,
-  },
-  {
-    name: "Encounters",
-    description: "SOAP notes & clinical history",
-    link: "/encounters",
-    accent: theme.colors.secondary,
-  },
-  {
-    name: "Prescriptions",
-    description: "eRx management",
-    link: "/prescriptions",
-    accent: theme.colors.secondary,
-  },
-  {
-    name: "Labs",
-    description: "Orders & results",
-    link: "/labs",
-    accent: theme.colors.secondary,
-  },
-  {
-    name: "Billing",
-    description: "Claims & payments",
-    link: "/billing",
-    accent: theme.colors.secondary,
-  },
-  {
-    name: "Audit Logs",
-    description: "Track all user activity",
-    link: "/audit",
-    accent: theme.colors.secondary,
-  },
-]
+  { name: "Users", description: "Manage roles, accounts & access", link: "/users" },
+  { name: "Patients", description: "Demographics & insurance", link: "/patients" },
+  { name: "Appointments", description: "Scheduling & calendar", link: "/appointments" },
+  { name: "Encounters", description: "SOAP notes & clinical history", link: "/encounters" },
+  { name: "Prescriptions", description: "eRx management", link: "/prescriptions" },
+  { name: "Labs", description: "Orders & results", link: "/labs" },
+  { name: "Billing", description: "Claims & payments", link: "/billing" },
+  { name: "Audit Logs", description: "Track all user activity", link: "/audit" },
+];
 </script>
 
 <template>
   <div>
-    <!-- Application Modules -->
-    <h2 :class="[theme.typography.sizes.h2, theme.typography.headings, 'mb-6']">
+    <h2 :class="[theme.typography.h2, theme.typography.headings, 'mb-4']">
       Application Modules
     </h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <a
-        v-for="mod in modules"
-        :key="mod.name"
-        :href="mod.link"
-        :class="[theme.components.card.base, 'group']"
-      >
-        <span
-          class="text-xl font-bold transition-colors"
-          :style="{ color: mod.accent }"
-        >
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <NuxtLink v-for="mod in modules" :key="mod.name" :to="mod.link" :class="theme.components.card.base">
+        <span class="text-xl font-bold" :style="{ color: theme.colors.primary }">
           {{ mod.name }}
         </span>
-        <p
-          :class="[theme.typography.sizes.small, 'transition-colors']"
-          :style="{ color: theme.colors.neutral.light }"
-        >
+        <p :class="[theme.colors.neutral.light, 'text-sm']">
           {{ mod.description }}
         </p>
-      </a>
+      </NuxtLink>
     </div>
   </div>
 </template>

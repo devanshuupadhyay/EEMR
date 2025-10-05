@@ -7,7 +7,7 @@ DATA_DIR = os.path.join(BASE_DIR, "..", "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
 # Initialize TinyDB
-db = TinyDB(os.path.join(DATA_DIR, "db.json"))
+db = TinyDB(os.path.join(DATA_DIR, "db.json"), indent=4)
 
 # Existing tables
 users_table = db.table("users")

@@ -9,6 +9,7 @@ passlib[bcrypt]
 dramatiq[redis]
 redis
 python-dotenv
+fhir.resources
 
 # Observability / Logging
 structlog
