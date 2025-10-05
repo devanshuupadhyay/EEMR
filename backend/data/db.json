@@ -33191,6 +33191,1608 @@
             "method": "GET",
             "status_code": 200,
             "duration": 0.0003769397735595703
+        },
+        "5537": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001882791519165039
+        },
+        "5538": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.002071857452392578
+        },
+        "5539": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0025780200958251953
+        },
+        "5540": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001569509506225586
+        },
+        "5541": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0019054412841796875
+        },
+        "5542": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0007524490356445312
+        },
+        "5543": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0020041465759277344
+        },
+        "5544": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001291036605834961
+        },
+        "5545": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006046295166015625
+        },
+        "5546": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006248950958251953
+        },
+        "5547": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.00177764892578125
+        },
+        "5548": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0010802745819091797
+        },
+        "5549": {
+            "path": "/api/v1/audit",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0791938304901123
+        },
+        "5550": {
+            "path": "/api/v1/audit",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.1151430606842041
+        },
+        "5551": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008523464202880859
+        },
+        "5552": {
+            "path": "/api/v1/Patient",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.07712388038635254
+        },
+        "5553": {
+            "path": "/api/v1/Patient",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.06101846694946289
+        },
+        "5554": {
+            "path": "/api/v1/Patient",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.05148148536682129
+        },
+        "5555": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008029937744140625
+        },
+        "5556": {
+            "path": "/api/v1/audit",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.11197352409362793
+        },
+        "5557": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0010333061218261719
+        },
+        "5558": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006363391876220703
+        },
+        "5559": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.00075531005859375
+        },
+        "5560": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0010516643524169922
+        },
+        "5561": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008819103240966797
+        },
+        "5562": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006515979766845703
+        },
+        "5563": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005941390991210938
+        },
+        "5564": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0011909008026123047
+        },
+        "5565": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008335113525390625
+        },
+        "5566": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001264810562133789
+        },
+        "5567": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0011096000671386719
+        },
+        "5568": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0010833740234375
+        },
+        "5569": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006711483001708984
+        },
+        "5570": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006203651428222656
+        },
+        "5571": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0019192695617675781
+        },
+        "5572": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008745193481445312
+        },
+        "5573": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005087852478027344
+        },
+        "5574": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006413459777832031
+        },
+        "5575": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006132125854492188
+        },
+        "5576": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008771419525146484
+        },
+        "5577": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006923675537109375
+        },
+        "5578": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006456375122070312
+        },
+        "5579": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0007624626159667969
+        },
+        "5580": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0007350444793701172
+        },
+        "5581": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008268356323242188
+        },
+        "5582": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0009300708770751953
+        },
+        "5583": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.002058744430541992
+        },
+        "5584": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0020651817321777344
+        },
+        "5585": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006737709045410156
+        },
+        "5586": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001024007797241211
+        },
+        "5587": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0007488727569580078
+        },
+        "5588": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0013840198516845703
+        },
+        "5589": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006392002105712891
+        },
+        "5590": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.00086212158203125
+        },
+        "5591": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006248950958251953
+        },
+        "5592": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006539821624755859
+        },
+        "5593": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0011494159698486328
+        },
+        "5594": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005414485931396484
+        },
+        "5595": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0004813671112060547
+        },
+        "5596": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006394386291503906
+        },
+        "5597": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006639957427978516
+        },
+        "5598": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005185604095458984
+        },
+        "5599": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0014619827270507812
+        },
+        "5600": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0009529590606689453
+        },
+        "5601": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006742477416992188
+        },
+        "5602": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0024285316467285156
+        },
+        "5603": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0007307529449462891
+        },
+        "5604": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.00070953369140625
+        },
+        "5605": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006265640258789062
+        },
+        "5606": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008943080902099609
+        },
+        "5607": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006864070892333984
+        },
+        "5608": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.002022266387939453
+        },
+        "5609": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.005549907684326172
+        },
+        "5610": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0011382102966308594
+        },
+        "5611": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0017049312591552734
+        },
+        "5612": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005822181701660156
+        },
+        "5613": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008645057678222656
+        },
+        "5614": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006365776062011719
+        },
+        "5615": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0009975433349609375
+        },
+        "5616": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0016856193542480469
+        },
+        "5617": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0007843971252441406
+        },
+        "5618": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0009307861328125
+        },
+        "5619": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0010075569152832031
+        },
+        "5620": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0014581680297851562
+        },
+        "5621": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006711483001708984
+        },
+        "5622": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0009717941284179688
+        },
+        "5623": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0779874324798584
+        },
+        "5624": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.020149707794189453
+        },
+        "5625": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.015147924423217773
+        },
+        "5626": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001298666000366211
+        },
+        "5627": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.012270689010620117
+        },
+        "5628": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.02243351936340332
+        },
+        "5629": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.024542808532714844
+        },
+        "5630": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.016197681427001953
+        },
+        "5631": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.016347885131835938
+        },
+        "5632": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.016422510147094727
+        },
+        "5633": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.018950462341308594
+        },
+        "5634": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.008578777313232422
+        },
+        "5635": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001649618148803711
+        },
+        "5636": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0009167194366455078
+        },
+        "5637": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0007636547088623047
+        },
+        "5638": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0011410713195800781
+        },
+        "5639": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.00512242317199707
+        },
+        "5640": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005249977111816406
+        },
+        "5641": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0009646415710449219
+        },
+        "5642": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001035451889038086
+        },
+        "5643": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0019192695617675781
+        },
+        "5644": {
+            "path": "/api/v1/Patient",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0629880428314209
+        },
+        "5645": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006458759307861328
+        },
+        "5646": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006039142608642578
+        },
+        "5647": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.000690460205078125
+        },
+        "5648": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0012636184692382812
+        },
+        "5649": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0012545585632324219
+        },
+        "5650": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.004232883453369141
+        },
+        "5651": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0015454292297363281
+        },
+        "5652": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0020525455474853516
+        },
+        "5653": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0007584095001220703
+        },
+        "5654": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0017175674438476562
+        },
+        "5655": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0007441043853759766
+        },
+        "5656": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001157522201538086
+        },
+        "5657": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006411075592041016
+        },
+        "5658": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0007457733154296875
+        },
+        "5659": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005261898040771484
+        },
+        "5660": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0017652511596679688
+        },
+        "5661": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005826950073242188
+        },
+        "5662": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006279945373535156
+        },
+        "5663": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006971359252929688
+        },
+        "5664": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0004992485046386719
+        },
+        "5665": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0014886856079101562
+        },
+        "5666": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006930828094482422
+        },
+        "5667": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0015132427215576172
+        },
+        "5668": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008358955383300781
+        },
+        "5669": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.010420560836791992
+        },
+        "5670": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008921623229980469
+        },
+        "5671": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0021724700927734375
+        },
+        "5672": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0022423267364501953
+        },
+        "5673": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001165151596069336
+        },
+        "5674": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005745887756347656
+        },
+        "5675": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0018973350524902344
+        },
+        "5676": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006387233734130859
+        },
+        "5677": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006344318389892578
+        },
+        "5678": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008327960968017578
+        },
+        "5679": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008697509765625
+        },
+        "5680": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0019237995147705078
+        },
+        "5681": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.00773310661315918
+        },
+        "5682": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.010869979858398438
+        },
+        "5683": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.029648542404174805
+        },
+        "5684": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.024341821670532227
+        },
+        "5685": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.016483306884765625
+        },
+        "5686": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.021532535552978516
+        },
+        "5687": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.027088165283203125
+        },
+        "5688": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.021885395050048828
+        },
+        "5689": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.028584718704223633
+        },
+        "5690": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.027011871337890625
+        },
+        "5691": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.02109360694885254
+        },
+        "5692": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.011822938919067383
+        },
+        "5693": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.02781844139099121
+        },
+        "5694": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.020409345626831055
+        },
+        "5695": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.040505409240722656
+        },
+        "5696": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.05328774452209473
+        },
+        "5697": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0013303756713867188
+        },
+        "5698": {
+            "path": "/api/v1/Patient",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.06403732299804688
+        },
+        "5699": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0012416839599609375
+        },
+        "5700": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0011723041534423828
+        },
+        "5701": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0013613700866699219
+        },
+        "5702": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0021610260009765625
+        },
+        "5703": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0012745857238769531
+        },
+        "5704": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0019388198852539062
+        },
+        "5705": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0013737678527832031
+        },
+        "5706": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0009403228759765625
+        },
+        "5707": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0013394355773925781
+        },
+        "5708": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0018846988677978516
+        },
+        "5709": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0007431507110595703
+        },
+        "5710": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0015325546264648438
+        },
+        "5711": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006673336029052734
+        },
+        "5712": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008409023284912109
+        },
+        "5713": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0010466575622558594
+        },
+        "5714": {
+            "path": "/api/v1/Patient",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.06462550163269043
+        },
+        "5715": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006282329559326172
+        },
+        "5716": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0009143352508544922
+        },
+        "5717": {
+            "path": "/api/v1/Patient",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.071533203125
+        },
+        "5718": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0015444755554199219
+        },
+        "5719": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008134841918945312
+        },
+        "5720": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006785392761230469
+        },
+        "5721": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0009226799011230469
+        },
+        "5722": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008349418640136719
+        },
+        "5723": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006535053253173828
+        },
+        "5724": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0011167526245117188
+        },
+        "5725": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006823539733886719
+        },
+        "5726": {
+            "path": "/api/v1/Patient",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.14981722831726074
+        },
+        "5727": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.005892038345336914
+        },
+        "5728": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0013608932495117188
+        },
+        "5729": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0009770393371582031
+        },
+        "5730": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0014429092407226562
+        },
+        "5731": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0009679794311523438
+        },
+        "5732": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008823871612548828
+        },
+        "5733": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001293182373046875
+        },
+        "5734": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.000652313232421875
+        },
+        "5735": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005667209625244141
+        },
+        "5736": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008237361907958984
+        },
+        "5737": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006840229034423828
+        },
+        "5738": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.00148773193359375
+        },
+        "5739": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005502700805664062
+        },
+        "5740": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006706714630126953
+        },
+        "5741": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0009908676147460938
+        },
+        "5742": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008080005645751953
+        },
+        "5743": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005376338958740234
+        },
+        "5744": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001008749008178711
+        },
+        "5745": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006909370422363281
+        },
+        "5746": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001035451889038086
+        },
+        "5747": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006349086761474609
+        },
+        "5748": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0011067390441894531
+        },
+        "5749": {
+            "path": "/api/v1/Patient",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.3645296096801758
+        },
+        "5750": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.003857135772705078
+        },
+        "5751": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005826950073242188
+        },
+        "5752": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0012805461883544922
+        },
+        "5753": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006394386291503906
+        },
+        "5754": {
+            "path": "/api/v1/Patient/p2",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.12633776664733887
+        },
+        "5755": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0007297992706298828
+        },
+        "5756": {
+            "path": "/api/v1/Patient",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.04476189613342285
+        },
+        "5757": {
+            "path": "/api/v1/Patient",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.050458669662475586
+        },
+        "5758": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008428096771240234
+        },
+        "5759": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005731582641601562
+        },
+        "5760": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0018491744995117188
+        },
+        "5761": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0012960433959960938
+        },
+        "5762": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005853176116943359
+        },
+        "5763": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006344318389892578
+        },
+        "5764": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.002789735794067383
+        },
+        "5765": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0011379718780517578
+        },
+        "5766": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.021327733993530273
+        },
+        "5767": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0012137889862060547
+        },
+        "5768": {
+            "path": "/api/v1/audit",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.1351161003112793
+        },
+        "5769": {
+            "path": "/api/v1/Patient",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.1080477237701416
+        },
+        "5770": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006711483001708984
+        },
+        "5771": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0008578300476074219
+        },
+        "5772": {
+            "path": "/docs",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0011394023895263672
+        },
+        "5773": {
+            "path": "/openapi.json",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.15727686882019043
+        },
+        "5774": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0012269020080566406
+        },
+        "5775": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006978511810302734
+        },
+        "5776": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001043081283569336
+        },
+        "5777": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0007486343383789062
+        },
+        "5778": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0010046958923339844
+        },
+        "5779": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0010144710540771484
+        },
+        "5780": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0015316009521484375
+        },
+        "5781": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0024085044860839844
+        },
+        "5782": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0011324882507324219
+        },
+        "5783": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0011856555938720703
+        },
+        "5784": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0016133785247802734
+        },
+        "5785": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0007922649383544922
+        },
+        "5786": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0010721683502197266
+        },
+        "5787": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0011510848999023438
+        },
+        "5788": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0015933513641357422
+        },
+        "5789": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0006916522979736328
+        },
+        "5790": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0012903213500976562
+        },
+        "5791": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.003374814987182617
+        },
+        "5792": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0005452632904052734
+        },
+        "5793": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0011157989501953125
+        },
+        "5794": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001251220703125
+        },
+        "5795": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001386880874633789
+        },
+        "5796": {
+            "path": "/api/v1/Patient",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.06739115715026855
+        },
+        "5797": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.000904083251953125
+        },
+        "5798": {
+            "path": "/api/v1/Patient/p1",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.11090779304504395
+        },
+        "5799": {
+            "path": "/api/v1/Patient",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.05753040313720703
+        },
+        "5800": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.001641988754272461
+        },
+        "5801": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0012755393981933594
+        },
+        "5802": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0014166831970214844
+        },
+        "5803": {
+            "path": "/",
+            "method": "GET",
+            "status_code": 200,
+            "duration": 0.0014677047729492188
         }
     },
     "users": {

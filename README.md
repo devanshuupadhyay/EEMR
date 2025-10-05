@@ -7,40 +7,14 @@ This document outlines the development plan for **EasyEMR**, a lightweight and e
 *   Create a GitHub repository and establish a robust branch strategy (`main` for production, `dev` for integration).
 *   Configure Docker for both frontend and backend services to ensure consistent development and deployment environments.
 *   Implement a GitHub Actions CI/CD pipeline for automated testing, linting, and deployment to a cloud service like Render.
-*   Establish a basic FastAPI project structure, including URL path versioning (`/api/v1/...`).
-### Dev steps
-*   mkdir backend, frontend, .vscode
-*   ni .gitignore -Force | Out-Null
-#### create python venv and activate
-*   python -m venv .venv
-#### allow running the activation script in this session, then activate
-*   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force
-. .\.venv\Scripts\Activate.ps1
-
-#### make backend directory and install dependencies
-*   mkdir backend\app -Force
-*   cd backend
-*   pip install --upgrade pip
-*   create requirement.txt
-*   fastapi "uvicorn[standard]" pydantic tinydb dramatiq[redis] redis structlog sentry-sdk python-dotenv
-*   pip install -r requirements.txt
-
-#### Create backend/app/main.py
-Explanation:
-*   TinyDB keeps everything file-based and easy to inspect (ideal for single-physician demo).
-*   audit_middleware logs each HTTP request into an audit table — gives you an audit trail for Milestone 1.
-*   create-user route satisfies the “one-click user creation for simple demo” requirement (but note the security warning).
+*   Establish a basic FastAPI project structure, including URL path versioning
 
 ### Step 2 — Background worker skeleton (Dramatiq) with Redis broker
 *   Create backend/app/tasks.py
-*   add a minimal background worker and Redis broker so you can queue background jobs (e.g., sending emails).
+*   add a minimal background worker and Redis broker 
 
 ### Step 3 — Frontend: scaffold Nuxt 3 + Tailwind placeholder
 *   create frontend/ using Nuxt 3, install Tailwind & Flowbite (Flowbite will be added later).
-*   npx nuxi@latest init frontend
-*   cd frontend
-*   npm install --save-dev tailwindcss postcss autoprefixer
-*   npm install flowbite pinia
 
 #### Step 4 — Docker Compose skeleton (backend + redis + frontend)
 * Create docker-compose.yml at project root
@@ -53,18 +27,10 @@ Explanation:
 
 #### Step 6 — Linting, formatting & CI skeleton
 add black/flake8 for Python and ESLint/Prettier for frontend; add a basic GitHub Actions workflow to run checks on push.
-*   Install Python tools (inside the venv):
-*   cd .venv
-*   pip install black isort flake8
-*   Install frontend linters (inside frontend):
-*   cd frontend
-*   npm install -D eslint prettier
-*   cd ..
-*   mkdir -p .github\workflows
 
 #### Step 7 — Observability & Logging starter
 wire up structlog (done in the sample main.py) and provide a placeholder for Sentry/OpenTelemetry.
-*   Add minimal Sentry + OpenTelemetry bootstrap in backend/app/_observability.py (load from env in main.py)
+*   Add minimal Sentry + OpenTelemetry bootstrap in backend/app/_observability.py 
 
 
 ### Database & Models
@@ -101,19 +67,14 @@ wire up structlog (done in the sample main.py) and provide a placeholder for Sen
 
 * **BillingRecord:** Financial records, CPT/ICD codes.
 
-* Pydantic ensures **data validation and type safety**.
-
-* Models define **fields, optional fields, and default values**.
-
 ---
 
 #### 3. Tables and Access Layer
 
 **Purpose:** Provide structured access to each table.
 
-* Each entity gets its own TinyDB table (e.g., `users`, `patients`, `appointments`).
-* A generic data access layer provides **CRUD operations**.
-* Enables future expansion, e.g., migration to relational DB if needed.
+* Each entity gets its own TinyDB table 
+* FHIR
 
 #### 4. Observability Integration
 
@@ -121,27 +82,6 @@ wire up structlog (done in the sample main.py) and provide a placeholder for Sen
 * Ensures traceability of data changes for compliance and debugging.
 
 ---
-
-#### 5. How It Works Together
-
-| Component         | Purpose                                      |
-| ----------------- | -------------------------------------------- |
-| TinyDB            | Lightweight JSON database for persistence    |
-| Pydantic Models   | Structured, validated data for all entities  |
-| Tables            | Separate storage per entity for organization |
-| Data Access Layer | CRUD operations and abstraction over raw DB  |
-| Audit Table       | Track data changes for observability         |
-
-* This foundation allows later milestones (Patient Management, Appointments, Billing) to **operate on consistent, validated data**.
-
----
-
-* EasyEMR’s database uses **TinyDB + Pydantic** for simplicity and structure.
-* Clear separation of concerns: models define data, tables store it, access layer manipulates it.
-* Audit logging ensures traceability even in a lightweight system.
-* Provides a foundation for all future features and observability.
-
-
 ### Observability
 *   Integrate Structlog for structured and contextual logging.
 *   Set up Prometheus and Grafana for monitoring application metrics and visualizing performance dashboards.
@@ -230,21 +170,12 @@ wire up structlog (done in the sample main.py) and provide a placeholder for Sen
 
 ## Milestone 2: User & Security
 
-### Authentication & Access Control
-*   Implement a simple one-click user creation feature for easy demonstration mode.
-*   Develop JWT-based authentication for secure user logins.
-*   Define a basic role model (`admin`, `physician`, `staff`) for access control.
-*   Add audit trail logging for all actions related to patient records.
-
-### Frontend Auth
-*   Create a dedicated login page using Nuxt.js.
-*   Use Pinia to manage and store the user authentication state.
-*   Protect frontend routes, allowing access only based on user roles.
+tbd
 
 ## Milestone 3: Patient Management
 
 ### Backend
-*   Develop CRUD (Create, Read, Update, Delete) APIs for managing patient demographics and insurance information.
+*   FHIR APIs for managing patient demographics and insurance information.
 *   Establish a clear linkage between patients and their assigned physician.
 
 ### Frontend
