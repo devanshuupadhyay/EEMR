@@ -3,7 +3,7 @@ from fastapi import APIRouter, HTTPException, Query
 import structlog
 from typing import Optional, List
 
-from models.db import audit_table
+from dbModels.db import audit_table
 from ..models.audit import PaginatedAuditResponse, AuditLog
 
 router = APIRouter()

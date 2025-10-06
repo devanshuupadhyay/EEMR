@@ -5,7 +5,7 @@ import structlog
 import json
 from typing import List # <--- Import List for type hinting
 
-from models.db import patients_table
+from dbModels.db import patients_table
 from ..models.fhir.patient import Patient
 
 # Initialize router and logger
