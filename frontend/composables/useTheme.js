@@ -47,6 +47,8 @@ export const useTheme = () => {
         base: "w-full px-4 py-1.5 rounded-md bg-neutral-dark border border-neutral-medium text-neutral-lightest placeholder-neutral-light focus:outline-none focus:ring-2 focus:ring-secondary",
         // --- NEW: Compact version for tables ---
         compact: "w-full px-2 py-1 rounded-md bg-neutral-dark border border-neutral-medium text-neutral-lightest placeholder-neutral-light focus:outline-none focus:ring-1 focus:ring-secondary",
+        // --- NEW: Datepicker style with icon filter applied via arbitrary variants ---
+        datepicker: "w-full px-2 py-1 rounded-md bg-neutral-dark border border-neutral-medium text-neutral-lightest focus:outline-none focus:ring-1 focus:ring-secondary [&::-webkit-calendar-picker-indicator]:(filter-none invert-70 sepia-1 saturate-5 hue-rotate-150)"
       },
       card: {
         // --- UPDATED: Reduced padding ---
