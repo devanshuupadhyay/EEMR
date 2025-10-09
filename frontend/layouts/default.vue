@@ -2,7 +2,7 @@
   <div class="bg-neutral-darkest text-neutral-lightest min-h-screen flex flex-col font-sans">
     <header class="bg-neutral-dark border-b border-neutral-medium p-4 flex justify-between items-center shadow-md">
       
-      <NuxtLink to="/" class="flex items-center gap-x-2 cursor-pointer">
+      <NuxtLink to="/" class="flex items-center gap-x-1 cursor-pointer">
         <img src="/icons/eemr_icon.png" alt="Easy EMR Logo" class="h-8 w-8 hexagon-img" />
         <div class="text-xl font-bold text-secondary">Easy EMR</div>
       </NuxtLink>

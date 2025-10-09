@@ -6,7 +6,7 @@ export const useTheme = () => {
   return {
     // 🎨 Color System
     colors: {
-      primary: "#1E90FF",   // Bright Azure
+      primary: "#17A2B8", // Muted Teal
       secondary: "#17A2B8", // Muted Teal
       neutral: {
         darkest: "#0B0C10", // App background (dark mode foundation)
